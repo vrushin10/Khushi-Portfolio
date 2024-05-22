@@ -1,27 +1,42 @@
-import React, { useState, useEffect } from 'react';
-import imgUrl from './aliverse/aliverse-01.png'
+import React from 'react';
+import {
+  ButtonBack,
+  ButtonFirst,
+  ButtonLast,
+  ButtonNext,
+  CarouselProvider,
+  DotGroup,
+  ImageWithZoom,
+  Slide,
+  Slider,
+} from 'pure-react-carousel';
+// import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 
 
-const Slideshow = ({ images: [] }) => {
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+import aliverse_01 from "../assets/aliverse/aliverse-01.png"
 
-  // Function to increment the image index
-  const nextImage = () => {
-    setCurrentImageIndex((prevIndex) =>
-      prevIndex === images.length - 1 ? 0 : prevIndex + 1
-    );
-  };
+// import s from '../../style.scss';
 
-  // Effect to update the image every 5 seconds
-  useEffect(() => {
-    const interval = setInterval(nextImage, 5000);
-    return () => clearInterval(interval);
-  }, []);
+export default () => (
+  // <CarouselProvider
+  //   visibleSlides={1}
+  //   totalSlides={2}
+  //   step={2}
+  //   naturalSlideWidth={400}
+  //   naturalSlideHeight={500}
+  // >
+  //   <p>Single image</p>
+  //   <Slider >
+  //     <Slide tag="a" index={0}>
+  //       {/* <ImageWithZoom src={aliverse_01} /> */}
+  //       <img src={aliverse_01} alt="" />
+  //     </Slide>
 
-  return (
-    <div>
-      <img src={images[currentImageIndex]} alt={`Image ${currentImageIndex}`} />
-    </div>
-  );
-};
-
-export default Slideshow;
+  //   </Slider>
+  //   <ButtonFirst>First</ButtonFirst>
+  //   <ButtonBack>Back</ButtonBack>
+  //   <ButtonNext>Next</ButtonNext>
+  //   <ButtonLast>Last</ButtonLast>
+  //   <DotGroup />
+  // </CarouselProvider>
+  <img width={"100%"} src={aliverse_01} alt="" />
+);
