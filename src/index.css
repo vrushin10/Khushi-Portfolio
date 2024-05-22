@@ -1,0 +1,75 @@
+
+body{
+   font-family: Century, Arial, Helvetica, sans-serif;
+   height: 100vh;
+   width: 100vw;
+   margin: 0px;
+   padding: 0px;
+    
+}
+
+
+.logo {
+   /* max-width: fit-content; */
+   margin-inline: auto;
+}
+
+.navbar {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.navbar-Text {
+   font-size: 20px;
+   height: 100%;
+   justify-content: center;
+   vertical-align: middle;
+
+}
+
+.navbar-left {
+   margin-left: 2.5vw;
+}
+
+.navbar-right {
+   margin-right: 2.5vw;
+}
+
+.homepage-table{
+   font-size: 20px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   height: 260px;
+   width: 562px;
+   position: fixed;
+   bottom: 0;
+   right: 0;
+   margin:2rem;   
+}
+
+.homepage-cell{
+   display: flex;
+   text-align: center; 
+   align-content: space-between; 
+   width: 100%;
+}
+
+.homepage-left{
+   text-align: left;
+}
+.homepage-right{
+   margin-left: auto;   
+   text-align: right;
+}
+
+/* Group 19 */
+
+
+.slideshow{
+   width: 774px;
+   height: 882px;   
+   margin: 2rem;
+}
