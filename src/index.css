@@ -1,30 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-body{
+body {
    font-family: Century, Arial, Helvetica, sans-serif;
    height: 100vh;
    width: 100vw;
    margin: 0px;
    padding: 0px;
-    
+   overflow: hidden;
+   font-size: 15px;
+   /* Hide scrollbars */
 }
 
 
 .logo {
    /* max-width: fit-content; */
    margin-inline: auto;
+   margin-top: 1rem;
 }
 
 .navbar {
    display: flex;
    justify-content: center;
    align-items: center;
+
 }
 
 .navbar-Text {
-   font-size: 20px;
+   font-size: 12px;
    height: 100%;
+   margin-top: 5px;
    justify-content: center;
-   vertical-align: middle;
+   align-content: center;
 
 }
 
@@ -36,40 +44,47 @@ body{
    margin-right: 2.5vw;
 }
 
-.homepage-table{
-   font-size: 20px;
+.homepage-table {
+   font-size: 15px;
    display: flex;
    flex-direction: column;
    justify-content: center;
    align-items: center;
-   height: 260px;
-   width: 562px;
+   height: max-content;
+   width: 52.5vw;
    position: fixed;
    bottom: 0;
    right: 0;
-   margin:2rem;   
+   margin: 2rem;
+   margin-bottom: 1rem;
 }
 
-.homepage-cell{
+.homepage-cell {
    display: flex;
-   text-align: center; 
-   align-content: space-between; 
+   text-align: center;
+   align-content: space-between;
    width: 100%;
+   cursor: pointer;
 }
 
-.homepage-left{
+.homepage-left {
    text-align: left;
 }
-.homepage-right{
-   margin-left: auto;   
+
+.homepage-right {
+   margin-left: auto;
    text-align: right;
 }
 
 /* Group 19 */
 
 
-.slideshow{
+.slideshow {
    width: 774px;
-   height: 882px;   
+   height: 882px;
    margin: 2rem;
+}
+
+.slideCarousel {
+   /* margin-top: 25%; */
 }

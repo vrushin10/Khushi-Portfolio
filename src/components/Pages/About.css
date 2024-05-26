@@ -1,0 +1,71 @@
+.backarrow {
+   /* Vector */
+
+   position: absolute;
+   left: 3.06%;
+   right: 95.56%;
+   top: 5.47%;
+   bottom: 91.02%;
+
+
+}
+
+
+/* Group 23 */
+.AboutContainer {
+   width: 37vw;
+   margin: auto;
+}
+
+
+/* ABOUT */
+.about {
+   font-family: 'Century';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 30px;
+   margin-bottom: 0.25rem;
+   /* identical to box height, or 120% */
+
+
+   color: #000000;
+}
+
+
+
+/* Group 9 */
+/* .Aboutlogo {} */
+
+
+/* Hello! I'm a creative designer living in Mumbai. I enjoy exploring various design and art mediums. My expertise lies in branding, illustration, packaging, digital arts, mixed media, and editorial design. I like to value connections in my projects by marrying creativity with functionality. Additionally, I've developed my skills as a fine artist to bring my creative ideas to fruition. By integrating creativity, technical expertise, and a keen eye for detail, my goal is to craft designs that are visually appealing and effectively convey the desired connection and understanding. */
+
+.aboutDisc {
+   /* position: absolute;
+   width: 519px;
+   height: 400px;
+   left: calc(50% - 519px/2 + 61.5px);
+   top: 367px; */
+   margin-left: 5rem;
+   font-family: 'Century';
+   font-style: normal;
+   font-weight: 400;
+   line-height: 25px;
+   font-size: 15px;
+   /* or 125% */
+
+   align-items: center;
+
+   color: #000000;
+}
+
+
+
+.link {
+   /* Group 2 */
+   font-size: 15px;
+   position: absolute;
+   right: 2vw;
+   bottom: 3vh;
+   line-height: 25px;
+}

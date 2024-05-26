@@ -1,0 +1,32 @@
+.slide {}
+
+.show {
+   width: 37vw;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   animation: fade 1.75s ease-in-out;
+}
+
+
+/* 
+.show>div {
+   width: 100%;
+   height: 100%;
+} */
+
+@keyframes fade {
+   from {
+      opacity: 0.1;
+   }
+
+   to {
+      opacity: 1;
+   }
+}
+
+.not-show {
+   display: none;
+}

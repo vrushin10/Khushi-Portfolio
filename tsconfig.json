@@ -20,6 +20,6 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src", "src/components/slideshow.tsx"],
+  "include": ["src", "src/components/slideshow.tsx", "tailwind.config.js"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
