@@ -12,6 +12,7 @@ import { CarouselProvider, Slider, Slide, DotGroup } from 'pure-react-carousel'
 import Slideshow from '../slideshow2'
 
 const Editorial = () => {
+   const DetailLink = null
    const images = [chanelly_01,
       chanelly_02,
       chanelly_03,
@@ -49,9 +50,10 @@ const Editorial = () => {
                         </svg>
                      </div>
                   </div >
-                  <div style={{ marginTop: "auto", marginBottom: "2rem" }}>
+                  <div style={{ marginTop: "auto", marginBottom: "2.5vh", marginRight: '5vw' }}>
                      <div style={{ fontSize: "18px", fontFamily: "Century Schoolbook" }}>Chanelly</div>
-                     <div style={{ fontSize: "15px", fontFamily: "Century Schoolbook" }}><p><br />'Chanelly' a 64-page editorial design book showcases beautifully crafted summer / spring runways by Karl Lagerfeld.<br /><br />The task of creating a 64-page book detailing the essence of the brand Chanel within a tight three-day timeframe, with two additional days allocated for printing. This project was deeply editorial in nature, serving as a final year project.</p></div>
+                     <div style={{ fontSize: "15px", fontFamily: "Century Schoolbook" }}><p><br />'Chanelly' a 64-page editorial design book showcases beautifully crafted summer / spring runways by Karl Lagerfeld.<br /><br />The task of creating a 64-page book detailing the essence of the brand Chanel within a tight three-day timeframe, with two additional days allocated for printing. This project was deeply editorial in nature, serving as a final year project.
+                        {!!DetailLink && <><br /><br></br><u className='cursor-pointer' onClick={() => { window.open("DetailLink", "_blank"); }}>VIEW PROJECT IN DETAIL</u></>}</p></div>
                   </div>
                </div >
             </div>

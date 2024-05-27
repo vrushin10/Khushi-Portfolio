@@ -12,6 +12,9 @@ import BrandIdentity from "./components/Pages/BrandIdentity";
 import About from "./components/Pages/About";
 import Sketchbook from "./components/Pages/Sketchbook";
 import Editorial1 from "./components/Pages/Editorial copy";
+import Sketchbook1 from "./components/Pages/sketchBook/sketchbook1";
+import Sketchbook2 from "./components/Pages/sketchBook/sketchbook2";
+import Sketchbook3 from "./components/Pages/sketchBook/sketchbook3";
 // import { slideShowContext } from "./components/slideshow1";
 
 
@@ -49,6 +52,10 @@ function App() {
         <Route path="/SocialMedia" element={<Social_Media />} />
         <Route path="/BrandIdentity" element={<BrandIdentity />} />
         <Route path="/Sketchbook" element={<Sketchbook />} />
+        <Route path="/Sketchbook1" element={<Sketchbook1 />} />
+        <Route path="/Sketchbook2" element={<Sketchbook2 />} />
+        <Route path="/Sketchbook3" element={<Sketchbook3 />} />
+
         <Route path="/About" element={<About />} />
 
       </Routes>

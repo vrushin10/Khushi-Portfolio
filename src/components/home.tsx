@@ -24,15 +24,12 @@ const Home = () => {
 
 
    function handelTableMouseEnter(number: number) {
-      console.log("tablehover");
       // @ts-ignore
       slideshowRef.current.MouseEnter(number);
 
    }
 
-   function handelTableMouseLeave() {
-      console.log("tablehover");
-      // @ts-ignore
+   function handelTableMouseLeave() {      // @ts-ignore
       slideshowRef.current.MouseLeave();
 
    }

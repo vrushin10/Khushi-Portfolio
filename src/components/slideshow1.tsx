@@ -14,14 +14,12 @@ const Carousel = forwardRef<HTMLDivElement, MyComponentProps>((props, ref) => {
 
    const MouseEnter = (pageNum: number) => {
       handlePage(pageNum);
-      handleMouse();
-      console.log("MouseEnter");
+      useState(true)
 
    }
 
    const MouseLeave = () => {
-      handleMouse();
-      console.log("MouseLeave");
+      useState(false)
 
    }
    const handleNext = () => {
