@@ -7,11 +7,11 @@ const Home = () => {
    return (<>
       <div className="navbar">
 
-         <div className="navbar-Text navbar-left" onClick={() => { navigate('/About') }}>About</div>
-         <div className="logo" onClick={() => { navigate('/') }}>
+         <div className="navbar-Text navbar-left cursor-pointer" onClick={() => { navigate('/About') }}>About</div>
+         <div className="logo cursor-pointer" onClick={() => { navigate('/') }}>
             <img src={logo} alt="logo" />
          </div>
-         <div className="navbar-Text navbar-right" onClick={() => { navigate('/Sketchbook') }}>Sketchbook</div>
+         <div className="navbar-Text navbar-right cursor-pointer" onClick={() => { navigate('/Sketchbook') }}>Sketchbook</div>
       </div>
       {/* <hr style={{
          color: 'black',

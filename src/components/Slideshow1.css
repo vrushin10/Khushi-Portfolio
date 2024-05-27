@@ -1,12 +1,7 @@
-.slide {}
-
 .show {
-   width: 37vw;
+
 
    display: flex;
-   justify-content: center;
-   align-items: center;
-   text-align: center;
    animation: fade 1.75s ease-in-out;
 }
 

@@ -48,15 +48,14 @@ body {
    font-size: 15px;
    display: flex;
    flex-direction: column;
-   justify-content: center;
+   justify-content: end;
    align-items: center;
-   height: max-content;
-   width: 52.5vw;
-   position: fixed;
-   bottom: 0;
-   right: 0;
-   margin: 2rem;
-   margin-bottom: 1rem;
+   height: 100%;
+   width: 100%;
+   margin-top: auto;
+   padding-bottom: 1rem;
+   margin-right: 2rem;
+
 }
 
 .homepage-cell {

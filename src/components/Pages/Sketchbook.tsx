@@ -1,8 +1,8 @@
 import React from 'react'
 import Header from '../header'
-import img1 from '../../assets/sketchbook/sketchbook  1.jpg'
-import img2 from '../../assets/sketchbook/sketchbook  2.png'
-import img3 from '../../assets/sketchbook/sketchbook  3.jpg'
+import img1 from '../../assets/sketchbook/sketchbook 1.webp'
+import img2 from '../../assets/sketchbook/sketchbook 2.webp'
+import img3 from '../../assets/sketchbook/sketchbook 3.webp'
 
 
 const Sketchbook = () => {

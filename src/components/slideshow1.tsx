@@ -25,6 +25,7 @@ const Carousel = forwardRef<HTMLDivElement, MyComponentProps>((props, ref) => {
 
    }
    const handleNext = () => {
+      // @ts-ignore
       if (counter !== content.length) {
          setCounter(counter + 1);
       } else {
@@ -36,6 +37,7 @@ const Carousel = forwardRef<HTMLDivElement, MyComponentProps>((props, ref) => {
       if (counter !== 1) {
          setCounter(counter - 1);
       } else {
+         // @ts-ignore
          setCounter(content.length);
       }
    };
@@ -58,6 +60,7 @@ const Carousel = forwardRef<HTMLDivElement, MyComponentProps>((props, ref) => {
       }, 2200);
       return () => clearInterval(interval);
    });
+   // @ts-ignore
    useImperativeHandle(ref, () => ({
       MouseEnter: MouseEnter,
       MouseLeave: MouseLeave
@@ -65,26 +68,26 @@ const Carousel = forwardRef<HTMLDivElement, MyComponentProps>((props, ref) => {
    }));
 
    return (
-      <div className="App">
-         <div
-            className="slide"
-            onMouseEnter={handleMouse}
-            onMouseLeave={handleMouse}
-         >
-            {content.map((item, index) => (
-               <div
-                  className={counter - 1 === index ? "show" : "not-show"}
-                  key={index}
-               >
-                  {item}
-               </div>
-            ))}
+      <div className="flex-1 mt-auto pt-1 h-full block"
+         onMouseEnter={handleMouse}
+         onMouseLeave={handleMouse}
+      >
+         <div className="h-full flex-col content-end">
 
-
-         </div>
-
-
+            {// @ts-ignore
+               content.map((item, index) => (
+                  <div
+                     className={counter - 1 === index ? "show sm:w-[100px] w-[200px] md:w-[40vw] lg:w-[40vw] xl:w-[37vw]" : "not-show"}
+                     key={index}
+                  >
+                     {item}
+                  </div>
+               ))}   </div>
       </div>
+
+
+
+
    );
 })
 

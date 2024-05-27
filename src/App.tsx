@@ -42,8 +42,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/Digital_Marketing" element={<Digital_Marketing />} />
         <Route path="/Branding" element={<Branding />} />
-        <Route path="/Editorial" element={<Editorial />} />
-        <Route path="/Editorial1" element={<Editorial1 />} />
+        {/* <Route path="/Editorial" element={<Editorial />} /> */}
+        <Route path="/Editorial" element={<Editorial1 />} />
 
         <Route path="/Illustration" element={<Illustration />} />
         <Route path="/SocialMedia" element={<Social_Media />} />
