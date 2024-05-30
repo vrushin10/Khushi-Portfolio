@@ -49,7 +49,7 @@ const BrandIdentity = () => {
             <Header></Header>
             <div className='w-screen h-full flex' >
                <div className='xl:max-w-[35vw]  flex-col content-end' style={{ textAlign: "center", marginLeft: "2.5vw", marginRight: "2rem", flex: 5 }}>
-                  <Slideshow>{/* 
+                  <Slideshow> {/*  
 // @ts-ignore */}
                      <img src={metgala_01} ref={imgref} onLoad={setHeight} width={"100%"} />
                      <img src={metgala_02} width={"100%"} />
