@@ -8,7 +8,7 @@ interface MyComponentProps {
 const Carousel = forwardRef<HTMLDivElement, MyComponentProps>((props, ref) => {
    const [counter, setCounter] = useState(1);
    const [pause, setPause] = useState(false);
-   // console.log(props);
+   console.log(props.children);
 
    const content = props.children;
 
@@ -66,22 +66,21 @@ const Carousel = forwardRef<HTMLDivElement, MyComponentProps>((props, ref) => {
    }));
 
    return (
-      <div className="flex-1 mt-auto pt-1 h-full block"
-         onMouseEnter={handleMouse}
+      <div onMouseEnter={handleMouse}
          onMouseLeave={handleMouse}
       >
-         <div className="h-full flex-col content-end">
 
-            {// @ts-ignore
-               content.map((item, index) => (
-                  <div
-                     className={counter - 1 === index ? "show sm:w-[100px] w-[200px] md:w-[40vw] lg:w-[40vw] xl:w-[37vw]" : "not-show"}
-                     key={index}
-                  >
-                     {item}
-                  </div>
-               ))}   </div>
-      </div>
+         {// @ts-ignore
+
+
+            content.map((item, index) => (
+               < div
+                  className={counter - 1 === index ? "show" : "hidden"}
+                  key={index}
+               >
+                  {item}
+               </div >
+            ))}   </div >
 
 
 

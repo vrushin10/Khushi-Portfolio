@@ -49,7 +49,7 @@ const Social_Media = () => {
          <div className="flex flex-col  h-screen">
             <Header></Header>
             <div className='w-screen h-full flex' >
-               <div className='xl:max-w-[35vw]  flex-col content-end' style={{ textAlign: "center", marginLeft: "2.5vw", marginRight: "2rem", flex: 5 }}>
+               <div className='xl:max-w-[35vw] flex-col content-end text-center ml-[2.5vw] mr-[2rem]' style={{ flex: 5 }}>
                   <Slideshow>
                      {/* 
 // @ts-ignore */}
@@ -61,19 +61,19 @@ const Social_Media = () => {
 
                   </Slideshow>
                </div>
-               <div className='w-full mt-auto ml-auto ' style={{
+               <div className='w-full mt-auto ml-auto flex flex-col pr-[2.5vw]' style={{
                   height: refHeight,
-                  display: "flex", flexDirection: "column", paddingRight: "2.5vw", flex: 6
+                  flex: 6
                }}>
-                  <div style={{ width: "100%", display: "flex", textAlign: 'center' }}>
+                  <div className='w-full flex text-current' >
                      <div style={{ fontSize: "15px", }}><u>Social Media</u></div>
                      <div className='ml-auto flex' >
-                        <img onClick={() => { navigate('../Illustration') }} src={backarrow} style={{ width: "15px", height: "15px", cursor: 'pointer' }} className="mr-10" alt="" />
-                        <img onClick={() => { navigate('../BrandIdentity') }} src={nextarrow} style={{ width: "15px", height: "15px", cursor: 'pointer' }} alt="" />
+                        <img onClick={() => { navigate('../Illustration') }} src={backarrow} className="mr-10 w-[15px] h-[15px] cursor-pointer" alt="" />
+                        <img onClick={() => { navigate('../BrandIdentity') }} src={nextarrow} className='w-[15px] h-[15px] cursor-pointer' alt="" />
 
                      </div>
                   </div >
-                  <div style={{ marginTop: "auto", marginBottom: "2.5vh", marginRight: '5vw' }}>
+                  <div className='mt-auto mb-[2.5vh] mr-[5vw]' >
                      <div style={{ fontSize: "18px", fontFamily: "Century Schoolbook" }}>Otherworldly</div>
                      <div style={{ fontSize: "15px", fontFamily: "Century Schoolbook" }}><p><br />Social Media Posts for Otherworldly—a blend of spirituality, wellness, beauty, and astrology, offering bold luxury and elegance.<br /><br />This involved crafting social media post guides that stayed true to the brand's aesthetic, incorporating its colors, clean design principles, and functional aspects to produce a diverse range of engaging posts tailored to meet the various contextual needs of the brand.
                         {!!DetailLink && <><br /><br></br><u className='cursor-pointer' onClick={() => { window.open(DetailLink, "_blank"); }}>VIEW PROJECT IN DETAIL</u></>}</p></div>

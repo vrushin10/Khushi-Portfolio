@@ -15,11 +15,7 @@ import { useNavigate } from 'react-router-dom'
 const Illustration = () => {
    const imgref = createRef()
    const [refHeight, setregHeight] = useState()
-   function setHeight() {
-      {/* 
-// @ts-ignore */}
-      setregHeight(imgref.current.offsetHeight)
-   }
+
    useEffect(() => {
       if (!imgref.current) return;
       const resizeObserver = new ResizeObserver(() => {
@@ -34,6 +30,31 @@ const Illustration = () => {
       return () => resizeObserver.disconnect(); // clean up 
    }, [imgref]);
 
+   const containerref = createRef()
+   const [containerHeight, setcontainerHeight] = useState()
+   function setContainerHeight() {
+      {/* 
+// @ts-ignore */}
+      setTimeout(() => {
+         // @ts-ignore
+         setcontainerHeight(containerref.current.offsetHeight)
+      }, 5);
+   }
+
+   useEffect(() => {
+      if (!containerref.current) return;
+      const resizeObserver = new ResizeObserver(() => {
+         {/* 
+// @ts-ignore */}
+         setcontainerHeight(containerref.current.offsetHeight)
+
+      });
+      {/* 
+// @ts-ignore */}
+      resizeObserver.observe(containerref.current);
+      return () => resizeObserver.disconnect(); // clean up 
+   }, [containerref]);
+
    const DetailLink = null
    const images = [metgala_01,
       metgala_02,
@@ -47,18 +68,19 @@ const Illustration = () => {
          <div className="flex flex-col  h-screen">
             <Header></Header>
             <div className='w-screen h-full flex' >
-               <div className='xl:max-w-[35vw]  flex-col content-end' style={{ textAlign: "center", marginLeft: "2.5vw", marginRight: "2rem", flex: 5 }}>
+               {/* @ts-ignore */}
+               <div className=' flex-col content-end ' ref={containerref} onLoad={setContainerHeight} style={{ textAlign: "center", marginLeft: "2.5vw", marginRight: "2rem" }}>
                   <Slideshow>{/* 
 // @ts-ignore */}
-                     <img src={metgala_01} ref={imgref} onLoad={setHeight} width={"100%"} />
-                     <img src={metgala_02} width={"100%"} />
-                     <img src={metgala_03} width={"100%"} />
-                     <img src={metgala_04} width={"100%"} />
+                     <img src={metgala_01} ref={imgref} style={{ maxWidth: 'none', height: `9%` }} />
+                     <img src={metgala_02} style={{ maxWidth: 'none', height: `9%` }} />
+                     <img src={metgala_03} style={{ maxWidth: 'none', height: `9%` }} />
+                     <img src={metgala_04} style={{ maxWidth: 'none', height: `9%` }} />
                   </Slideshow>
                </div>
                <div className='w-full mt-auto ml-auto ' style={{
                   height: refHeight,
-                  display: "flex", flexDirection: "column", paddingRight: "2.5vw", flex: 6
+                  display: "flex", flexDirection: "column", paddingRight: "2.5vw"
                }}>
                   <div style={{ width: "100%", display: "flex", textAlign: 'center' }}>
                      <div style={{ fontSize: "15px", }}><u>Illustration</u></div>
