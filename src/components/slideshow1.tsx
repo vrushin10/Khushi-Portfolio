@@ -8,7 +8,6 @@ interface MyComponentProps {
 const Carousel = forwardRef<HTMLDivElement, MyComponentProps>((props, ref) => {
    const [counter, setCounter] = useState(1);
    const [pause, setPause] = useState(false);
-   console.log(props.children);
 
    const content = props.children;
 

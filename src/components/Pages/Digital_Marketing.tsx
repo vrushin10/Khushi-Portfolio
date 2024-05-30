@@ -52,14 +52,14 @@ const Digital_Marketing = () => {
                   <Slideshow>
                      {/* 
 // @ts-ignore */}
-                     <img src={`${metgala_01}?${new Date().getTime()}`} ref={imgref} onLoad={setHeight} width={"auto"} alt="" />
-                     <img src={`${metgala_02}?${new Date().getTime()}`} width={"auto"} alt="" />
-                     <img src={`${metgala_03}?${new Date().getTime()}`} width={"auto"} alt="" />
-                     <img src={`${metgala_04}?${new Date().getTime()}`} width={"auto"} alt="" />
-                     <img src={`${metgala_05}?${new Date().getTime()}`} width={"auto"} alt="" />
-                     <img src={`${metgala_06}?${new Date().getTime()}`} width={"auto"} alt="" />
-                     <img src={`${metgala_07}?${new Date().getTime()}`} width={"auto"} alt="" />
-                     <img src={`${metgala_08}?${new Date().getTime()}`} width={"auto"} alt="" />
+                     <img src={metgala_01} ref={imgref} onLoad={setHeight} width={"auto"} alt="" />
+                     <img src={metgala_02} width={"auto"} alt="" />
+                     <img src={metgala_03} width={"auto"} alt="" />
+                     <img src={metgala_04} width={"auto"} alt="" />
+                     <img src={metgala_05} width={"auto"} alt="" />
+                     <img src={metgala_06} width={"auto"} alt="" />
+                     <img src={metgala_07} width={"auto"} alt="" />
+                     <img src={metgala_08} width={"auto"} alt="" />
 
                   </Slideshow>
                </div>

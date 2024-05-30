@@ -9,7 +9,7 @@ import img3 from "../assets/bowlcurry/bowl curry-01 (1).webp"
 import img4 from "../assets/chanelly/chanelly-06 (1).webp"
 import img5 from "../assets/hot to haute/met gala-01.webp"
 import img6 from "../assets/otherworldly/otherworldly social media-01 (1).webp"
-
+import MobileHeader from './MobileHeader.tsx'
 const Home = () => {
    const imgs = [
       img5,
@@ -58,7 +58,7 @@ const Home = () => {
 
       //  <div>Home</div>
       <>
-         <div className="flex flex-col  h-screen">
+         <div className="hidden lg:flex flex-col  h-screen ">
             <Header></Header>
             <div className="flex  h-full w-full">
                {/* @ts-ignore */}
@@ -83,6 +83,29 @@ const Home = () => {
 
             </div>
          </div>
+         <div className="flex lg:hidden flex-col  h-screen ">
+            <MobileHeader></MobileHeader>
+            <div className='h-full w-screen flex flex-col-reverse'>
+               <div className=' mx-auto'><Slideshow1 ref={slideshowRef as React.RefObject<HTMLDivElement>}  >
+                  {imgs.map((img, index) => {
+                     return (
+                        // @ts-ignore
+                        <img src={img} key={index} className='' style={{ maxHeight: "80vh", maxWidth: "95vw", marginTop: 'auto' }} alt="" />
+                     )
+                  })}
+               </Slideshow1></div>
+               <div className='flex flex-col h-full'>
+                  <div className='h-full flex items-center mx-[2.5vw]'><span>Hot to Haute</span><span className='ml-auto'>Branding / Campaign</span></div>
+                  <div className='h-full flex items-center mx-[2.5vw]'><span>Sand</span><span className='ml-auto'>Branding / UI Design</span></div>
+                  <div className='h-full flex items-center mx-[2.5vw]'><span>Chanelly</span><span className='ml-auto'>Editorial Design</span></div>
+                  <div className='h-full flex items-center mx-[2.5vw]'><span>BowlCurry</span><span className='ml-auto'>Illustration</span></div>
+                  <div className='h-full flex items-center mx-[2.5vw]'><span>Otherworldly</span><span className='ml-auto'>Social Media Guides</span></div>
+                  <div className='h-full flex items-center mx-[2.5vw]'><span>Aliverse</span><span className='ml-auto'>Brand Identity</span></div>
+               </div>
+
+            </div>
+         </div>
+
       </>
    )
 }

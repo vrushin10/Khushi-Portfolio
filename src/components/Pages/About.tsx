@@ -2,7 +2,7 @@ import React from 'react'
 import './About.css'
 import logo from "../../assets/logo.svg"
 import { useNavigate } from "react-router-dom";
-import CV_Khushi_M_pdf from "../../assets/CV Khushi M..pdf";
+import CV_Khushi_M_pdf from "../../assets/CV_Khushi_M. (1).pdf";
 import backarrow from "../../assets/backarrow.svg";
 
 const About = () => {
@@ -33,13 +33,13 @@ const About = () => {
          </div>
 
          <div className="link">
-            <div style={{ cursor: "pointer", color: "#555555" }} onClick={() => { window.open("mailto:khushimistryco@gmail.com", "_blank") }}>𖥔 Email</div>
+            <div style={{ cursor: "pointer", color: "#555555" }} onClick={() => { window.open("mailto:khushimistryco@gmail.com", "_blank") }}>𖥔<span className='hover:underline'> Email</span></div>
             <div style={{ color: "#555555" }} onClick={() => { }}>{"\n{khushimistryco@gmail.com}\n"}</div>
-            <div style={{ cursor: "pointer", color: "#555555" }} onClick={() => { document.getElementById('downloadCv').click(); }}>𖥔 <u>Download CV</u></div>
+            <div style={{ cursor: "pointer", color: "#555555" }} onClick={() => { document.getElementById('downloadCv').click(); }}>𖥔<span className='hover:underline'> <u>Download CV</u></span></div>
             <a id='downloadCv' href={CV_Khushi_M_pdf} download="CV_Khushi_M..pdf" target="_blank" rel="noopener noreferrer" />
-            <div style={{ cursor: "pointer", color: "#555555" }} onClick={() => { window.open("http://linkedin.com/in/khushi-mistry11176/", "_blank") }}>𖥔 LinkedIn</div>
-            <div style={{ cursor: "pointer", color: "#555555" }} onClick={() => { window.open("http://behance.net/khushimistry", "_blank") }}>𖥔 Behance</div>
-            <div style={{ cursor: "pointer", color: "#555555" }} onClick={() => { window.open("http://instagram.com/khushimistryy.creative", "_blank") }}>𖥔 Instagram</div>
+            <div style={{ cursor: "pointer", color: "#555555" }} onClick={() => { window.open("http://linkedin.com/in/khushi-mistry11176/", "_blank") }}>𖥔 <span className='hover:underline'> LinkedIn</span></div>
+            <div style={{ cursor: "pointer", color: "#555555" }} onClick={() => { window.open("http://behance.net/khushimistry", "_blank") }}>𖥔<span className='hover:underline'> Behance</span></div>
+            <div style={{ cursor: "pointer", color: "#555555" }} onClick={() => { window.open("http://instagram.com/khushimistryy.creative", "_blank") }}>𖥔<span className='hover:underline'> Instagram</span></div>
          </div>
       </>
 
