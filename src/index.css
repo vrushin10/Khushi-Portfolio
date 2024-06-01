@@ -8,7 +8,7 @@ body {
    width: 100vw;
    margin: 0px;
    padding: 0px;
-   overflow: hidden;
+   /* overflow: hidden; */
    font-size: 15px;
    /* Hide scrollbars */
 }
@@ -16,7 +16,7 @@ body {
 
 .logo {
    /* max-width: fit-content; */
-   margin-inline: auto;
+
    margin-top: 1rem;
 }
 
@@ -36,13 +36,6 @@ body {
 
 }
 
-.navbar-left {
-   margin-left: 2.5vw;
-}
-
-.navbar-right {
-   margin-right: 2.5vw;
-}
 
 .homepage-table {
    font-size: 15px;
@@ -52,7 +45,7 @@ body {
    align-items: center;
    height: 100%;
    width: 100%;
-   margin-top: auto;
+
    padding-bottom: 1rem;
    margin-right: 2rem;
 

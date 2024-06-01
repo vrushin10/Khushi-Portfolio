@@ -1,0 +1,4 @@
+.carousel-item {
+   scroll-snap-align: start;
+   flex: none;
+}

@@ -1,24 +1,26 @@
 import React, { useState, useEffect, forwardRef, useImperativeHandle } from "react";
 import "./Slideshow1.css";
+import { useNavigate } from "react-router-dom";
 
 interface MyComponentProps {
    children: React.ReactNode;
+   navigateLinks: string[]
 }
 
-const Carousel = forwardRef<HTMLDivElement, MyComponentProps>((props, ref) => {
+const Slideshow1 = forwardRef<HTMLDivElement, MyComponentProps>((props, ref) => {
    const [counter, setCounter] = useState(1);
    const [pause, setPause] = useState(false);
 
    const content = props.children;
-
+   const navigate = useNavigate();
    const MouseEnter = (pageNum: number) => {
       handlePage(pageNum);
-      useState(true)
+      setPause(true)
 
    }
 
    const MouseLeave = () => {
-      useState(false)
+      setPause(false)
 
    }
    const handleNext = () => {
@@ -76,6 +78,7 @@ const Carousel = forwardRef<HTMLDivElement, MyComponentProps>((props, ref) => {
                < div
                   className={counter - 1 === index ? "show" : "hidden"}
                   key={index}
+                  onClick={() => { navigate(props.navigateLinks[index]) }}
                >
                   {item}
                </div >
@@ -87,4 +90,4 @@ const Carousel = forwardRef<HTMLDivElement, MyComponentProps>((props, ref) => {
    );
 })
 
-export default Carousel;
+export default Slideshow1;
