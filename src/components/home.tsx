@@ -18,15 +18,17 @@ const Home = () => {
       img1,
       img4,
       img3,
-      img6,
-      img2]
+      // img6,
+      // img2
+   ]
 
    const navigateLinks = ["../Digital_Marketing",
       "../Branding",
       "../Editorial",
       "../Illustration",
-      "../SocialMedia",
-      "../BrandIdentity",]
+      // "../SocialMedia",
+      // "../BrandIdentity",
+      ]
    const imgref = createRef()
    const [refHeight, setregHeight] = useState(0)
    function setHeight() {
@@ -110,18 +112,24 @@ const Home = () => {
                         <div className="homepage-left">BowlCurry</div>
                         <div className="homepage-right">Illustration</div>
                      </div>
+                     {/*
+                     SocialMedia - Otherworldly
                      <div className=' border-t border-black dark:border-white mx-auto my-1 w-full' />
+
                      <div className="homepage-cell hover:underline" onClick={() => { navigate("/SocialMedia") }} onMouseOver={() => { handelTableMouseEnter(5) }} onMouseLeave={() => { handelTableMouseLeave() }}>
                         <div className="homepage-left">Otherworldly</div>
                         <div className="homepage-right">Social Media Posts</div>
-                     </div>
+                     </div> */}
+                     {/* 
+                     Aliverse - brand Identity
                      <div className=' border-t border-black dark:border-white mx-auto my-1 w-full' />
                      <div className="homepage-cell hover:underline" onClick={() => { navigate("/BrandIdentity") }} onMouseOver={() => { handelTableMouseEnter(6) }} onMouseLeave={() => { handelTableMouseLeave() }}>
                         <div className="homepage-left">Aliverse</div>
                         <div className="homepage-right">Brand Identity</div>
-                     </div>
+                     </div> 
+                     */}
                      <div className=' border-t border-black dark:border-white mx-auto my-1 w-full' />
-                  </div>
+                     </div>
                </div>
 
             </div>

@@ -60,8 +60,8 @@ function App() {
           <Route path="/Branding" element={<Branding />} />
           <Route path="/Editorial" element={<Editorial />} />
           <Route path="/Illustration" element={<Illustration />} />
-          <Route path="/SocialMedia" element={<Social_Media />} />
-          <Route path="/BrandIdentity" element={<BrandIdentity />} />
+          {/* <Route path="/SocialMedia" element={<Social_Media />} /> */}
+          {/* <Route path="/BrandIdentity" element={<BrandIdentity />} /> */}
           <Route path="/Sketchbook" element={<Sketchbook />} />
           <Route path="/Sketchbook1" element={<Sketchbook1 />} />
           <Route path="/Sketchbook2" element={<Sketchbook2 />} />

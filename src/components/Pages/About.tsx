@@ -9,7 +9,7 @@ import darkbackarrow from '../../assets/darkbackarrow.svg';
 
 const About = () => {
    const navigate = useNavigate()
-
+   const classnamesshit = "mb-1 cursor-pointer text-[#555555] dark:text-[#ecebe9]";
    return (
       <>
          <div className='hidden lg:block dark:bg-[#000000] dark:text-white'>
@@ -68,14 +68,14 @@ const About = () => {
 
                </div>
                <div className=' mb-[8vh] '>
-                  <div className=' '>
-                     <div className='mb-1 cursor-pointer text-[#ecebe9]' onClick={() => { window.open("mailto:khushimistryco@gmail.com", "_blank") }}>𖥔 Email</div>
-                     <div className="mb-1 text-[#ecebe9]" onClick={() => { }}>{"\n{khushimistryco@gmail.com}\n"}</div>
-                     <div className='mb-1 cursor-pointer text-[#ecebe9]' onClick={() => { document.getElementById('downloadCv').click(); }}>𖥔 <u>Download CV</u></div>
+                  <div className={classnamesshit}>
+                     <div className={classnamesshit} onClick={() => { window.open("mailto:khushimistryco@gmail.com", "_blank") }}>𖥔 Email</div>
+                     <div className="mb-1 text-[#555555] dark:text-[#ecebe9]" onClick={() => { }}>{"\n{khushimistryco@gmail.com}\n"}</div>
+                     <div className={classnamesshit} onClick={() => { document.getElementById('downloadCv').click(); }}>𖥔 <u>Download CV</u></div>
                      <a id='downloadCv' href={CV_Khushi_M_pdf} download="CV_Khushi_M..pdf" target="_blank" rel="noopener noreferrer" />
-                     <div className=' mb-1 cursor-pointer text-[#ecebe9]' onClick={() => { window.open("http://linkedin.com/in/khushi-mistry11176/", "_blank") }}>𖥔 LinkedIn</div>
-                     <div className=' mb-1 cursor-pointer text-[#ecebe9]' onClick={() => { window.open("http://behance.net/khushimistry", "_blank") }}>𖥔 Behance</div>
-                     <div className=' mb-1 cursor-pointer text-[#ecebe9]' onClick={() => { window.open("http://instagram.com/khushimistryy.creative", "_blank") }}>𖥔 Instagram</div>
+                     <div className={classnamesshit} onClick={() => { window.open("http://linkedin.com/in/khushi-mistry11176/", "_blank") }}>𖥔 LinkedIn</div>
+                     <div className={classnamesshit} onClick={() => { window.open("http://behance.net/khushimistry", "_blank") }}>𖥔 Behance</div>
+                     <div className={classnamesshit} onClick={() => { window.open("http://instagram.com/khushimistryy.creative", "_blank") }}>𖥔 Instagram</div>
                   </div>
                </div>
             </div>
